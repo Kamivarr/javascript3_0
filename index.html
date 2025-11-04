@@ -1,14 +1,39 @@
 <!doctype html>
-<html>
+<html lang="pl">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countries Information</title>
   <link rel="stylesheet" href="style.css" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>repl.it</title>
+  
 </head>
 
 <body>
+  <div class="container">
+    <h1>Wyszukaj kraj po stolicy</h1>
+
+    <form id="capitalForm">
+      <input type="text" id="capitalInput" placeholder="Wpisz nazwę stolicy" required />
+      <button type="submit">Szukaj</button>
+    </form>
+
+    <table id="resultTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Capital</th>
+          <th>Population</th>
+          <th>Region</th>
+          <th>Subregion</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <p id="errorMessage" class="error"></p>
+  </div>
+
   <script src="script.js"></script>
 </body>
 
